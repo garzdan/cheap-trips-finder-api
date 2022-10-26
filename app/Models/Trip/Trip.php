@@ -12,5 +12,5 @@ class Trip extends Model
 
     public $timestamps = false;
 
-    protected $with = ['stages'];
+    protected $with = ['stages', 'departure', 'arrival'];
 }

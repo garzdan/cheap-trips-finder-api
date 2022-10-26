@@ -17,6 +17,6 @@ class FlightController extends Controller
      */
     public function index(): AnonymousResourceCollection
     {
-        return FlightResource::collection((Flight::orderBy('code_departure'))->jsonPaginate());
+        return FlightResource::collection(Flight::orderBy('code_departure')->get());
     }
 }

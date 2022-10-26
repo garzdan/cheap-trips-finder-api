@@ -21,7 +21,7 @@ return [
      * If you only need to display Next and Previous links, you may use
      * simple pagination to perform a more efficient query.
      */
-    'use_simple_pagination' => true, /*
+    'use_simple_pagination' => false, /*
      * Here you can override the base url to be used in the link items.
      */
     'base_url' => NULL, /*

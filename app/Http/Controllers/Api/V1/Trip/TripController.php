@@ -32,6 +32,6 @@ class TripController extends Controller
             $queryBuilder = $arrival ? $queryBuilder->where('arrival_id', $arrival->id) : $queryBuilder;
         }
 
-        return TripResource::collection($queryBuilder->jsonPaginate());
+        return TripResource::collection($queryBuilder->get());
     }
 }

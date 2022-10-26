@@ -17,6 +17,6 @@ class AirportController extends Controller
      */
     public function index()
     {
-        return AirportResource::collection((Airport::query())->jsonPaginate());
+        return AirportResource::collection(Airport::orderBy('name')->get());
     }
 }
