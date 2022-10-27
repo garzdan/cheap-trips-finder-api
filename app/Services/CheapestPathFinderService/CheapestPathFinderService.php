@@ -12,6 +12,9 @@ class CheapestPathFinderService implements CheapestPathFinderServiceContract
     public function __construct(protected AlgorithmContract $algorithm) {}
 
     /**
+     * Runs an algorithm to find the cheapest path between $departure and $arrival with max $maxStopovers.
+     * Returns the path found and its cost or null if no path is found.
+     *
      * @param Collection $hubs
      * @param Collection $connections
      * @param NodeContract $departure

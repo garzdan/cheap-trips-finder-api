@@ -34,7 +34,8 @@ class FindCheapestTrips extends Command
     protected $description = 'Find the cheapest trips between the available airports and store them in db';
 
     /**
-     * Execute the console command.
+     * Finds the cheapest paths with the configured max stopovers between all the available nodes and stores
+     * the solution in db
      *
      */
     public function handle(): void
